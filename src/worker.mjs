@@ -142,7 +142,7 @@ async function handleEmbeddings (req, apiKey) {
   return new Response(body, { ...response, headers: fixCors(response.headers) });
 }
 
-const DEFAULT_MODEL = "gemini-1.5-pro-latest";
+const DEFAULT_MODEL = "gemini-1.5-flash-latest";
 async function handleCompletions (req, apiKey) {
   let model = DEFAULT_MODEL;
   /* eslint-disable no-fallthrough */
